@@ -1,5 +1,6 @@
 // webpack.config.js
 module.exports = {
+  mode: "development",
   module: {
     rules: [
       {
@@ -7,27 +8,8 @@ module.exports = {
         use: 'yaml-loader'
       }
     ]
-  }
+  },
+  devServer: {
+    static: "./dist",
+  },
 }
-/*
-  const path = require("path");
-
-  module.exports = {
-      entry: "./src/app.js",
-      output: {
-          path: path.join(__dirname, 'public'),
-          filename: 'bundle.js'
-      },
-      module:{
-          rules:[{
-              loader: 'babel-loader',
-              test: '/\.(js|jsx)$/',
-              exclude: /node_modules/
-          }]
-      },
-      devtool: 'cheap-module-eval-source-map',
-      devServer: {
-          contentBase: path.join(__dirname, 'public')
-      }
-  }
-      */
