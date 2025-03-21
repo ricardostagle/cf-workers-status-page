@@ -1,6 +1,6 @@
 name = "cf-workers-status-page"
 workers_dev = true
-account_id = ""
+account_id = "fbe0b9bc03cff1c4c6f6066090cb35e6"
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
