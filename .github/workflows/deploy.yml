@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  repository_dispatch:
-  schedule:
-    - cron: '0 0 1 * *'
 
 jobs:
   deploy:
@@ -44,7 +41,3 @@ jobs:
         environment: production
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        SECRET_SLACK_WEBHOOK_URL: ${{secrets.SECRET_SLACK_WEBHOOK_URL}}
-        SECRET_TELEGRAM_API_TOKEN: ${{secrets.SECRET_TELEGRAM_API_TOKEN}}
-        SECRET_TELEGRAM_CHAT_ID: ${{secrets.SECRET_TELEGRAM_CHAT_ID}}
-        SECRET_DISCORD_WEBHOOK_URL: ${{secrets.SECRET_DISCORD_WEBHOOK_URL}}

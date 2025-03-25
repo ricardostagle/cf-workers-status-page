@@ -6,8 +6,8 @@ account_id = "fbe0b9bc03cff1c4c6f6066090cb35e6"
 #webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2025-03-21"
 
-#[triggers]
-#crons = ["*/15 * * * *"]
+[triggers]
+crons = ["*/15 * * * *"]
 
 #[site]
 bucket = "out"
