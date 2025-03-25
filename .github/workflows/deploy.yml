@@ -11,13 +11,15 @@ jobs:
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 22
+    - name: enable corepack
       run: corepack enable
+
+    - name: set node
+      uses: actions/setup-node@v4
       with:
-          node-version: 'lts/*'
-          cache: 'yarn'
+        node-version: 'lts/*'
+        cache: 'yarn'
+
     - run: yarn install
     - run: yarn build
       env:
