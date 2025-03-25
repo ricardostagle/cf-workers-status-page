@@ -9155,9 +9155,9 @@ workerd@1.20230904.0:
     "@cloudflare/workerd-linux-arm64" "1.20230904.0"
     "@cloudflare/workerd-windows-64" "1.20230904.0"
 
-wrangler@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.npmjs.org/wrangler/-/wrangler-3.9.0.tgz"
+wrangler@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.npmjs.org/wrangler/-/wrangler-3.3.0.tgz"
   integrity sha512-Ho1A76KxbqfcRgCsuN6xGar3BVPyn4oVWM9zx0HvEVhT9wQ7n/LvB6GlPdXKABqEBYhVe/oTH72S5TgWl0DgaA==
   dependencies:
     "@cloudflare/kv-asset-handler" "^0.2.0"
