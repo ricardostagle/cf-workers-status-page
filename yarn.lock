@@ -856,6 +856,17 @@
     "@types/mime" "^2.0.2"
     mime "^2.4.6"
 
+"@cloudflare/pages-functions-compiler@0.3.8":
+  version "0.3.8"
+  resolved "https://registry.npmjs.org/@cloudflare/pages-functions-compiler/-/pages-functions-compiler-0.3.8.tgz"
+  integrity sha512-4aaAprXZMSekSv3lubOOUnS4s8IYXyY5Px6EEnF7tQmzjaeQk22q2LLTCdGYgs16LMf+Bd94787xGcQP9gLDWw==
+  dependencies:
+    acorn "^8.4.1"
+    acorn-walk "^8.1.1"
+    commander "^8.1.0"
+    esbuild "0.14.1"
+    path-to-regexp "^6.2.0"
+
 "@cloudflare/workers-types@^2.0.0":
   version "2.2.2"
   resolved "https://registry.npmjs.org/@cloudflare/workers-types/-/workers-types-2.2.2.tgz"
@@ -921,142 +932,141 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@miniflare/cache@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/cache/-/cache-2.2.0.tgz"
-  integrity sha512-N6b4V6fp4V0ljUHWs6+wVAvT94/SUCp6+pn3wnizjnYQhDE9ns8KJHu6zOTi+OkZUezjdUDJK0dqQXIKC/23XA==
+"@miniflare/cache@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/cache/-/cache-2.0.0-rc.4.tgz"
+  integrity sha512-63PeBccUGXCQ0Ekdt9OwgVCuJIKZ+d8lRAFpJtIa7+ZVybW9F9ehOOKZZYFzEbfBA6Y23i046A44SrpNPeAEGA==
   dependencies:
-    "@miniflare/core" "2.2.0"
-    "@miniflare/shared" "2.2.0"
+    "@miniflare/core" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
     http-cache-semantics "^4.1.0"
-    undici "4.12.1"
+    undici "^4.11.1"
 
-"@miniflare/cli-parser@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/cli-parser/-/cli-parser-2.2.0.tgz"
-  integrity sha512-AeP3hZOQ7/dBosCPh/iL7cwgdUi5EfHA0unGsFULaxuCwBb3RkQd5WAq4gzzgHywsFRIQ0+5/j9Mk1wHG2AkJA==
+"@miniflare/cli-parser@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/cli-parser/-/cli-parser-2.0.0-rc.4.tgz"
+  integrity sha512-jFtG6Ib3fjLenEepKSGJXMUn1hTk1xsjDPVjBX4VNc7P75zMlgdWLmSJSh7qBZpWd4mCUr46MOTtdPXWrW8Opw==
   dependencies:
-    "@miniflare/shared" "2.2.0"
+    "@miniflare/shared" "2.0.0-rc.4"
     kleur "^4.1.4"
 
-"@miniflare/core@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/core/-/core-2.2.0.tgz"
-  integrity sha512-CJwYhyXQ7si0ALZ4wB/vFAo0sHcyaMR7A8oQb6HaZ8XKhaKkzA8BmPutMvYVikiW+oRJP3YRcJGuVKibL3TSgA==
+"@miniflare/core@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/core/-/core-2.0.0-rc.4.tgz"
+  integrity sha512-nORCqBpj2zqZdlHdTk8VePidCc6VMvd3b3qRqC5eA3/p9CMrpBtQbBx074tnxiRimWnl1lP41U2ucZevwjTGZg==
   dependencies:
     "@iarna/toml" "^2.2.5"
-    "@miniflare/shared" "2.2.0"
-    "@miniflare/watcher" "2.2.0"
+    "@miniflare/shared" "2.0.0-rc.4"
     busboy "^0.3.1"
     dotenv "^10.0.0"
     kleur "^4.1.4"
     set-cookie-parser "^2.4.8"
-    undici "4.12.1"
+    undici "^4.11.1"
 
-"@miniflare/durable-objects@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/durable-objects/-/durable-objects-2.2.0.tgz"
-  integrity sha512-iIRritqTBiTvX5dHPYswc3a6qzi3LPilbFE2HGjHMbqHi+/C4yX9SMfxCU4/6NcXc9xWjMGtJYBk+hgOW+Mvow==
+"@miniflare/durable-objects@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/durable-objects/-/durable-objects-2.0.0-rc.4.tgz"
+  integrity sha512-Zyv0E71sIYa1OobAmgoaBNum0vzPI6rk6K9Ib5fnMpjx4IzFc+kt6MQq5mUiLUa4yEADmrDHrQ5X4Bqe9Is5lA==
   dependencies:
-    "@miniflare/core" "2.2.0"
-    "@miniflare/shared" "2.2.0"
-    "@miniflare/storage-memory" "2.2.0"
-    undici "4.12.1"
+    "@miniflare/core" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
+    "@miniflare/storage-memory" "2.0.0-rc.4"
+    undici "^4.11.1"
 
-"@miniflare/html-rewriter@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/html-rewriter/-/html-rewriter-2.2.0.tgz"
-  integrity sha512-20qic3swy5bXg63Q96oHBKxHWp5d5GSn2HCZYXlHtODHeVbI/1lYQoD12b9EmE2i+jUZfCJjlinmjonXGyyL+A==
+"@miniflare/html-rewriter@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/html-rewriter/-/html-rewriter-2.0.0-rc.4.tgz"
+  integrity sha512-KzQvG5r0KbMWctskH/1XIBT+YgQdHrXnYnK7nqJ3fhMjNO02xytlmGISHABV8WGCFYuWZglqTxOQPi17we8Ikw==
   dependencies:
-    "@miniflare/core" "2.2.0"
-    "@miniflare/shared" "2.2.0"
-    html-rewriter-wasm "^0.4.0"
-    undici "4.12.1"
+    "@miniflare/core" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
+    html-rewriter-wasm "^0.3.2"
+    undici "^4.11.1"
 
-"@miniflare/http-server@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/http-server/-/http-server-2.2.0.tgz"
-  integrity sha512-nx7xEXKYvPyUpu2HFigD+UEgclipMQzGdTKtm4t6JzsOGYys7Lj7kGjryYaQVtbbJvPKIxqSaViFQDk/QSdosg==
+"@miniflare/http-server@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/http-server/-/http-server-2.0.0-rc.4.tgz"
+  integrity sha512-ZxPfylDEa9RZkvTDzicbE0AYLoCBintQS2biGHLOiCpVCvSZej43XUs3A8KxSPN0adnz0KUzX58pcXQPU9CXuQ==
   dependencies:
-    "@miniflare/core" "2.2.0"
-    "@miniflare/shared" "2.2.0"
-    "@miniflare/web-sockets" "2.2.0"
+    "@miniflare/core" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
+    "@miniflare/web-sockets" "2.0.0-rc.4"
     kleur "^4.1.4"
-    selfsigned "^2.0.0"
-    undici "4.12.1"
+    selfsigned "^1.10.11"
+    undici "^4.11.1"
     ws "^8.2.2"
     youch "^2.2.2"
 
-"@miniflare/kv@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/kv/-/kv-2.2.0.tgz"
-  integrity sha512-x2iUskcNEX74AfDhcZDKMTchNn3hUQyxDrzuDSHOv0vWRxDctmqYh5VxZVUGiaFvrbNN2+XgkgxXNY6TxrsfNQ==
+"@miniflare/kv@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/kv/-/kv-2.0.0-rc.4.tgz"
+  integrity sha512-jHkMS6VCadUlTrE4m+aCyrZS5VfQ0D3YhWJwFHWCtqAEItV0ggDN2+saCEoAW0YXzsiadlbuWJeAM4H11g1JNw==
   dependencies:
-    "@miniflare/shared" "2.2.0"
+    "@miniflare/shared" "2.0.0-rc.4"
 
-"@miniflare/runner-vm@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/runner-vm/-/runner-vm-2.2.0.tgz"
-  integrity sha512-x58BxIsAB6LcYgqTNVfxTsKFCu4G3Xiuj1k+3ZQ4b8v8TZjuZ3iOJcsrYU0PlbW5JpnRA8IH/mkiFRb/MrLtaQ==
+"@miniflare/runner-vm@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/runner-vm/-/runner-vm-2.0.0-rc.4.tgz"
+  integrity sha512-eFOMVvhyHuI5JUOF4/8oyRId3zpKgY0xyN5Jk+7y/I3QiqSZFDFnO1hHPXHzlgimBawFEi0SzSsa5saJB2KFSQ==
   dependencies:
-    "@miniflare/shared" "2.2.0"
+    "@miniflare/shared" "2.0.0-rc.4"
 
-"@miniflare/scheduler@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/scheduler/-/scheduler-2.2.0.tgz"
-  integrity sha512-OqfeSfxEfG3XA6D33C3dUxTUIy425n+BbZe15D2SdfvqUBeBobzOAAp0FbCQiZ5USsDY/zSIu98iSclqPxAn5w==
+"@miniflare/scheduler@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/scheduler/-/scheduler-2.0.0-rc.4.tgz"
+  integrity sha512-PGzXSFavmLjxFz2WN6m2rO/HiFIxOLyxw4330AP6UJpGd/HP5tmTsF/aUGE5MjwKkgzQyk815nGZMvusR37fqA==
   dependencies:
-    "@miniflare/core" "2.2.0"
-    "@miniflare/shared" "2.2.0"
+    "@miniflare/core" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
     cron-schedule "^3.0.4"
 
-"@miniflare/shared@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/shared/-/shared-2.2.0.tgz"
-  integrity sha512-ikz3nkBexVQ16Ioi6naAzK6Spj5O7lUcqIihMLCQKTAAdC252EL0QrBRxHV9MlvkypVNj6MqkoL4E6HcyuCo6g==
+"@miniflare/shared@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/shared/-/shared-2.0.0-rc.4.tgz"
+  integrity sha512-bu59+0r+IxmuBmFDDELxJ8vaewuimaBylrkxMF5o+DaZmIXGmxzDmji2LLXT4oDjGHP4FN6Eex5pR0f5eDsjkQ==
   dependencies:
     ignore "^5.1.8"
     kleur "^4.1.4"
 
-"@miniflare/sites@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/sites/-/sites-2.2.0.tgz"
-  integrity sha512-UpD5xGqEnwHZ0slvAp+8N60LX1WezXTZVLI599KGIXuthEVkRLgk8PwujabmHisicDoyC3nxITeDExq0DY9G/w==
+"@miniflare/sites@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/sites/-/sites-2.0.0-rc.4.tgz"
+  integrity sha512-qWFpvo3eQpPZOp58rzjbTVuB1xZULUpndaiKOp17+WrfXV1on0Y/ipgmFFDqTT5qMsWG14Y68CQeJCzF7ww36A==
   dependencies:
-    "@miniflare/kv" "2.2.0"
-    "@miniflare/shared" "2.2.0"
-    "@miniflare/storage-file" "2.2.0"
+    "@miniflare/kv" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
+    "@miniflare/storage-file" "2.0.0-rc.4"
 
-"@miniflare/storage-file@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/storage-file/-/storage-file-2.2.0.tgz"
-  integrity sha512-DzBbUmPadDw+nAG31Yn60d1Jg6ksHmXasfnd1g7Whe/D0leFRAsvcEJyVaojzlnuxTabtZAsLMoUjsofvnThzA==
+"@miniflare/storage-file@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/storage-file/-/storage-file-2.0.0-rc.4.tgz"
+  integrity sha512-wu9S71T4fpYm5JQmpA/P+LuWxPoWQwAzFVrN5eAQgx6T8846D/Dl9iBED4bgo+yJiVrlfwFCeojNsqfxziWz/g==
   dependencies:
-    "@miniflare/shared" "2.2.0"
-    "@miniflare/storage-memory" "2.2.0"
+    "@miniflare/shared" "2.0.0-rc.4"
+    "@miniflare/storage-memory" "2.0.0-rc.4"
 
-"@miniflare/storage-memory@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/storage-memory/-/storage-memory-2.2.0.tgz"
-  integrity sha512-1Ze2ZGwRFzH+6lLu6hZMTwGYTNioIT07QXvz3ZS/ilpg++cWUtqy2yHnajdJgcnNDNNQ4iVGladC2GNezrLbHg==
+"@miniflare/storage-memory@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/storage-memory/-/storage-memory-2.0.0-rc.4.tgz"
+  integrity sha512-D/qbZR6JwLyp3uA/2A3UA5XqhnTe2SaSsY/Qw47EfwPicsPEVGQl4dwrVLobslA+mxYVabOMM4G/uCU5c3fI/Q==
   dependencies:
-    "@miniflare/shared" "2.2.0"
+    "@miniflare/shared" "2.0.0-rc.4"
 
-"@miniflare/watcher@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/watcher/-/watcher-2.2.0.tgz"
-  integrity sha512-Myaztj1QaL1IaB04uBLKY8hE1kFtvB65cnKdJPOgjFxIgFzNyqybjlBjxx01Q6vymboFTPrl1Q5+g7fsW3lmfQ==
+"@miniflare/watcher@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/watcher/-/watcher-2.0.0-rc.4.tgz"
+  integrity sha512-94buFqkifFlTZtwu7DvgmmQzz9NA9YWMGMIfbsVmVMiugTa39topc0KnVrcvBKnkBjQpA8Vk8edkqsn5tXb4fg==
   dependencies:
-    "@miniflare/shared" "2.2.0"
+    "@miniflare/shared" "2.0.0-rc.4"
 
-"@miniflare/web-sockets@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@miniflare/web-sockets/-/web-sockets-2.2.0.tgz"
-  integrity sha512-/GHYuTq6m28udequw4E8IpcFmcEheAcVQ3oZyAvY0ub0by8v4WzYuougiizqYylyQZ0KXyLg8SmPeBNChe82Zw==
+"@miniflare/web-sockets@2.0.0-rc.4":
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/@miniflare/web-sockets/-/web-sockets-2.0.0-rc.4.tgz"
+  integrity sha512-d+TNVTu5IjW0mF39PgSodRYWhj//PzyouPiEZ2pH4SHJ+FXjwjgomAehtMh0GTab4SZwXOAhHYgKoH8fzhLt8g==
   dependencies:
-    "@miniflare/core" "2.2.0"
-    "@miniflare/shared" "2.2.0"
-    undici "4.12.1"
+    "@miniflare/core" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
+    undici "^4.11.1"
     ws "^8.2.2"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -1156,13 +1166,6 @@
   version "5.1.2"
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-5.1.2.tgz"
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
-
-"@types/node-forge@^1.3.0":
-  version "1.3.11"
-  resolved "https://registry.npmjs.org/@types/node-forge/-/node-forge-1.3.11.tgz"
-  integrity sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==
-  dependencies:
-    "@types/node" "*"
 
 "@types/node@*":
   version "22.13.13"
@@ -1501,6 +1504,13 @@ acorn-walk@^7.0.0:
   resolved "https://registry.npmjs.org/acorn-walk/-/acorn-walk-7.2.0.tgz"
   integrity sha512-OPdCF6GsMIP+Az+aWfAAOEt2/+iVDKE7oy6lJ098aoe59oAmK76qV6Gw60SbZ8jHuG2wH058GF4pLFbYamYrVA==
 
+acorn-walk@^8.1.1:
+  version "8.3.4"
+  resolved "https://registry.npmjs.org/acorn-walk/-/acorn-walk-8.3.4.tgz"
+  integrity sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==
+  dependencies:
+    acorn "^8.11.0"
+
 acorn@^6.4.1:
   version "6.4.2"
   resolved "https://registry.npmjs.org/acorn/-/acorn-6.4.2.tgz"
@@ -1510,6 +1520,11 @@ acorn@^7.0.0:
   version "7.4.1"
   resolved "https://registry.npmjs.org/acorn/-/acorn-7.4.1.tgz"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
+
+acorn@^8.11.0, acorn@^8.4.1:
+  version "8.14.1"
+  resolved "https://registry.npmjs.org/acorn/-/acorn-8.14.1.tgz"
+  integrity sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==
 
 acorn@^8.14.0:
   version "8.14.1"
@@ -2475,6 +2490,11 @@ commander@^7.0.0, commander@^7.2.0:
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
 commander@^8.0.0:
+  version "8.3.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-8.3.0.tgz"
+  integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
+
+commander@^8.1.0:
   version "8.3.0"
   resolved "https://registry.npmjs.org/commander/-/commander-8.3.0.tgz"
   integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
@@ -4369,10 +4389,10 @@ html-entities@^1.2.1, html-entities@^1.3.1:
   resolved "https://registry.npmjs.org/html-entities/-/html-entities-1.4.0.tgz"
   integrity sha512-8nxjcBcd8wovbeKx7h3wTji4e6+rhaVuPNpMqwWgnHh+N9ToqsCs6XztWRBPQ+UtzsoMAdKZtUENoVzU/EMtZA==
 
-html-rewriter-wasm@^0.4.0:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/html-rewriter-wasm/-/html-rewriter-wasm-0.4.1.tgz"
-  integrity sha512-lNovG8CMCCmcVB1Q7xggMSf7tqPCijZXaH4gL6iE8BFghdQCbaY5Met9i1x2Ex8m/cZHDUtXK9H6/znKamRP8Q==
+html-rewriter-wasm@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/html-rewriter-wasm/-/html-rewriter-wasm-0.3.2.tgz"
+  integrity sha512-b+pOh+bs00uRVNIZoTgGBREjUKN47pchTNwkxKuP4ecQTFcOA6KJIW+jjvjjXrkSRURZsideLxFKqX7hnxdegQ==
 
 html-tags@^3.1.0:
   version "3.3.1"
@@ -5447,29 +5467,30 @@ mini-css-extract-plugin@^0.9.0:
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
-miniflare@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/miniflare/-/miniflare-2.2.0.tgz"
-  integrity sha512-azOKDz9RfyWfDZY4u1k+GaaRuBApfgrRoz99sK/U7ngm0pxL0YRNuHPFSHwezAxw1Oz+KQpwtPClCE0zs7Rqgg==
+miniflare@2.0.0-rc.4:
+  version "2.0.0-rc.4"
+  resolved "https://registry.npmjs.org/miniflare/-/miniflare-2.0.0-rc.4.tgz"
+  integrity sha512-nzoooM8tctkR6KBBgQo8/HuHdQ8GgqTXbmpqq3DiIH1LTZDiKSYQ420T+t6HhWl1IP6i3htQR5TzBq50iAgm0A==
   dependencies:
-    "@miniflare/cache" "2.2.0"
-    "@miniflare/cli-parser" "2.2.0"
-    "@miniflare/core" "2.2.0"
-    "@miniflare/durable-objects" "2.2.0"
-    "@miniflare/html-rewriter" "2.2.0"
-    "@miniflare/http-server" "2.2.0"
-    "@miniflare/kv" "2.2.0"
-    "@miniflare/runner-vm" "2.2.0"
-    "@miniflare/scheduler" "2.2.0"
-    "@miniflare/shared" "2.2.0"
-    "@miniflare/sites" "2.2.0"
-    "@miniflare/storage-file" "2.2.0"
-    "@miniflare/storage-memory" "2.2.0"
-    "@miniflare/web-sockets" "2.2.0"
+    "@miniflare/cache" "2.0.0-rc.4"
+    "@miniflare/cli-parser" "2.0.0-rc.4"
+    "@miniflare/core" "2.0.0-rc.4"
+    "@miniflare/durable-objects" "2.0.0-rc.4"
+    "@miniflare/html-rewriter" "2.0.0-rc.4"
+    "@miniflare/http-server" "2.0.0-rc.4"
+    "@miniflare/kv" "2.0.0-rc.4"
+    "@miniflare/runner-vm" "2.0.0-rc.4"
+    "@miniflare/scheduler" "2.0.0-rc.4"
+    "@miniflare/shared" "2.0.0-rc.4"
+    "@miniflare/sites" "2.0.0-rc.4"
+    "@miniflare/storage-file" "2.0.0-rc.4"
+    "@miniflare/storage-memory" "2.0.0-rc.4"
+    "@miniflare/watcher" "2.0.0-rc.4"
+    "@miniflare/web-sockets" "2.0.0-rc.4"
     kleur "^4.1.4"
     semiver "^1.1.0"
     source-map-support "^0.5.20"
-    undici "4.12.1"
+    undici "^4.11.1"
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
@@ -5692,11 +5713,6 @@ node-forge@^0.10.0:
   version "0.10.0"
   resolved "https://registry.npmjs.org/node-forge/-/node-forge-0.10.0.tgz"
   integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
-
-node-forge@^1:
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/node-forge/-/node-forge-1.3.1.tgz"
-  integrity sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==
 
 node-libs-browser@^2.2.1:
   version "2.2.1"
@@ -7651,20 +7667,12 @@ select-hose@^2.0.0:
   resolved "https://registry.npmjs.org/select-hose/-/select-hose-2.0.0.tgz"
   integrity sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg==
 
-selfsigned@^1.10.8:
+selfsigned@^1.10.11, selfsigned@^1.10.8:
   version "1.10.14"
   resolved "https://registry.npmjs.org/selfsigned/-/selfsigned-1.10.14.tgz"
   integrity sha512-lkjaiAye+wBZDCBsu5BGi0XiLRxeUlsGod5ZP924CRSEoGuZAw/f7y9RKu28rwTfiHVhdavhB0qH0INV6P1lEA==
   dependencies:
     node-forge "^0.10.0"
-
-selfsigned@^2.0.0:
-  version "2.4.1"
-  resolved "https://registry.npmjs.org/selfsigned/-/selfsigned-2.4.1.tgz"
-  integrity sha512-th5B4L2U+eGLq1TVh7zNRGBapioSORUeymIydxgFpwww9d2qyKvtuPU2jJuHvYAwwqi2Y596QBL3eEqcPEYL8Q==
-  dependencies:
-    "@types/node-forge" "^1.3.0"
-    node-forge "^1"
 
 semiver@^1.1.0:
   version "1.1.0"
@@ -8668,10 +8676,10 @@ undici-types@~6.20.0:
   resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.20.0.tgz"
   integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
 
-undici@4.12.1:
-  version "4.12.1"
-  resolved "https://registry.npmjs.org/undici/-/undici-4.12.1.tgz"
-  integrity sha512-MSfap7YiQJqTPP12C11PFRs9raZuVicDbwsZHTjB0a8+SsCqt7KdUis54f373yf7ZFhJzAkGJLaKm0202OIxHg==
+undici@^4.11.1:
+  version "4.16.0"
+  resolved "https://registry.npmjs.org/undici/-/undici-4.16.0.tgz"
+  integrity sha512-tkZSECUYi+/T1i4u+4+lwZmQgLXd4BLGlrc7KZPcLIW7Jpq99+Xpc30ONv7nS6F5UNOxp/HBZSSL9MafUrvJbw==
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.1"
@@ -9202,14 +9210,14 @@ worker-farm@^1.7.0:
   dependencies:
     errno "~0.1.7"
 
-wrangler@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/wrangler/-/wrangler-0.0.10.tgz"
-  integrity sha512-x1CrXpaYqo4D09dO4efhXrakLZEINAw9bCE0r1xt4v1pxZRQmn5vDdfZF9AEneZohosz8R4XSYARIAk1NCSKdA==
+wrangler@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/wrangler/-/wrangler-0.0.5.tgz"
+  integrity sha512-EATsbkVgkOeyam/9ulVB2YP6hNrnU3sEQR0T6dAokPsqFt7BT8FC5ZboRG3pAVeFHPjTqHbxyM7ss38nuyI/ww==
   dependencies:
+    "@cloudflare/pages-functions-compiler" "0.3.8"
     esbuild "0.14.1"
-    miniflare "2.2.0"
-    path-to-regexp "^6.2.0"
+    miniflare "2.0.0-rc.4"
     semiver "^1.1.0"
   optionalDependencies:
     fsevents "~2.3.2"
