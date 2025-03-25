@@ -2507,3 +2507,7 @@ monitors:
   - id: wwwbaxtercatest
     name: wwwbaxtercatest 
     url: 'https://wwwbaxtercatest-site.baxterdigital.net'
+    method: GET
+    expectStatus: 200
+    linkable: true
+    followRedirect: false
