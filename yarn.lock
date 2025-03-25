@@ -9158,7 +9158,7 @@ workerd@1.20230904.0:
 wrangler@3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/wrangler/-/wrangler-3.3.0.tgz"
-  integrity sha512-Ho1A76KxbqfcRgCsuN6xGar3BVPyn4oVWM9zx0HvEVhT9wQ7n/LvB6GlPdXKABqEBYhVe/oTH72S5TgWl0DgaA==
+  integrity sha512-m9+mmf3BOT5Q6pPxiXOa/MkmCrJO/CGxuePrDW0las4oNmPdT+seYxQZkM8QJVKANm0MBuU1dJqSPPF3arh73w==
   dependencies:
     "@cloudflare/kv-asset-handler" "^0.2.0"
     "@esbuild-plugins/node-globals-polyfill" "^0.2.3"
