@@ -2,8 +2,8 @@ name = "cf-workers-status-page"
 main = "./index.js"
 workers_dev = true
 account_id = "fbe0b9bc03cff1c4c6f6066090cb35e6"
-#type = "webpack"
-#webpack_config = "node_modules/flareact/webpack"
+type = "webpack"
+webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2025-03-21"
 
 [triggers]
