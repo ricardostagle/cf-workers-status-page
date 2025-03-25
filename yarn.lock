@@ -9202,16 +9202,15 @@ worker-farm@^1.7.0:
   dependencies:
     errno "~0.1.7"
 
-wrangler@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.npmjs.org/wrangler/-/wrangler-0.0.15.tgz"
-  integrity sha512-FntFrFTKg1mtKWwxVHmtC9MK/4N3QSHNd+cbT0WjRfbcZiE8LiLxUj0d2p46FFNWPKbl9D2eSQnMIJ2Npip/BQ==
+wrangler@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/wrangler/-/wrangler-0.0.10.tgz"
+  integrity sha512-x1CrXpaYqo4D09dO4efhXrakLZEINAw9bCE0r1xt4v1pxZRQmn5vDdfZF9AEneZohosz8R4XSYARIAk1NCSKdA==
   dependencies:
     esbuild "0.14.1"
     miniflare "2.2.0"
     path-to-regexp "^6.2.0"
     semiver "^1.1.0"
-    xxhash-addon "^1.4.0"
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -9254,11 +9253,6 @@ xtend@^4.0.0, xtend@^4.0.2, xtend@~4.0.1:
   version "4.0.2"
   resolved "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
-
-xxhash-addon@^1.4.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/xxhash-addon/-/xxhash-addon-1.5.0.tgz"
-  integrity sha512-ZkfBZMrrpbyT8/uw7x+2voPBXO2oczajlGo11+OOO1YqGbk6DuF7erwirCUPvydN17lEjilu3VGDWWG4+fV45Q==
 
 y18n@^4.0.0:
   version "4.0.3"
