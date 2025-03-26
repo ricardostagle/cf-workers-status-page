@@ -14,13 +14,13 @@
     "css": "postcss public/tailwind.css -o public/style.css"
   },
   "dependencies": {
-    "flareact": "^0.10.0",
+    "flareact": "^1.5.0",
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^5.98.0",
-    "webpack-cli": "^4.10.0",
+    "webpack-cli": "^6.0.1",
     "yaml": "2.7.0",
     "yaml-loader": "^0.8.1"
   },
