@@ -1,23 +1,23 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.testing.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  title: "Status Page"
+  url: "https://status-page.testing.dev"
+  logo: "logo-192x192.png"
+  daysInHistogram: 90
+  collectResponseTimes: true
+  allmonitorsOperational: "All Systems Operational"
+  notAllmonitorsOperational: "Not All Systems Operational"
+  monitorLabelOperational: "Operational"
+  monitorLabelNotOperational: "Not Operational"
+  monitorLabelNoData: "No data"
+  dayInHistogramNoData: "No data"
+  dayInHistogramOperational: "All good"
+  dayInHistogramNotOperational: "incident(s)"
 
 monitors:
   - id: accesspilot
     name: accesspilot
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://accesspilot-site.baxterdigital.net'
+    description: "Built for anything connected to the Internet."
+    url: "https://accesspilot-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -25,24 +25,24 @@ monitors:
 
   - id: acutecare20210401
     name: acutecare20210401
-    url: 'https://acutecare20210401-site.baxterdigital.net'
+    url: "https://acutecare20210401-site.baxterdigital.net"
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
     followRedirect: false
 
   - id: acutecare20210908
     name: acutecare20210908
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://acutecare20210908-site.baxterdigital.net'
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    description: "You write code. They handle the rest."
+    url: "https://acutecare20210908-site.baxterdigital.net"
+    method: GET
+    expectStatus: 200
+    followRedirect: false 
+    linkable: false
 
   - id: acuteeu
     name: emeaacutetherapies.baxter.com
-    url: 'https://acuteeu-site.baxterdigital.net'
+    url: "https://acuteeu-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -50,7 +50,7 @@ monitors:
 
   - id: acutetherapies
     name: acutetherapiesinstitute.com 
-    url: 'https://acutetherapies-site.baxterdigital.net'
+    url: "https://acutetherapies-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -58,7 +58,7 @@ monitors:
 
   - id: advancedsurgery20210714
     name: advancedsurgery20210714
-    url: 'https://advancedsurgery20210714-site.baxterdigital.net'
+    url: "https://advancedsurgery20210714-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -66,7 +66,7 @@ monitors:
 
   - id: advancedsurgery20211013
     name: advancedsurgery20211013 
-    url: 'https://advancedsurgery20211013-site.baxterdigital.net'
+    url: "https://advancedsurgery20211013-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -74,7 +74,7 @@ monitors:
 
   - id: advancedsurgery20231011
     name: advancedsurgery.baxter.com 
-    url: 'https://advancedsurgery20231011-site.baxterdigital.net'
+    url: "https://advancedsurgery20231011-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -82,7 +82,7 @@ monitors:
 
   - id: advancedsurgeryanz
     name: surgicaleducation.baxterhealthcare.com.au
-    url: 'https://advancedsurgeryanz-site.baxterdigital.net'
+    url: "https://advancedsurgeryanz-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -90,7 +90,7 @@ monitors:
 
   - id: advancedsurgerybe
     name: advancedsurgery.baxter.be
-    url: 'https://advancedsurgerybe-site.baxterdigital.net'
+    url: "https://advancedsurgerybe-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -98,7 +98,7 @@ monitors:
 
   - id: advancedsurgerybr
     name: advancedsurgerybr
-    url: 'https://advancedsurgerybr-site.baxterdigital.net'
+    url: "https://advancedsurgerybr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -106,7 +106,7 @@ monitors:
 
   - id: advancedsurgerycz
     name: advancedsurgerycz 
-    url: 'https://advancedsurgerycz-site.baxterdigital.net'
+    url: "https://advancedsurgerycz-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -114,7 +114,7 @@ monitors:
 
   - id: advancedsurgeryde
     name: advancedsurgery.baxter.de
-    url: 'https://advancedsurgeryde-site.baxterdigital.net'
+    url: "https://advancedsurgeryde-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -122,7 +122,7 @@ monitors:
 
   - id: advancedsurgerydk
     name: advancedsurgerydk
-    url: 'https://advancedsurgerydk-site.baxterdigital.net'
+    url: "https://advancedsurgerydk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -130,7 +130,7 @@ monitors:
 
   - id: advancedsurgeryedu
     name: advancedsurgeryedu
-    url: 'https://advancedsurgeryedu-site.baxterdigital.net'
+    url: "https://advancedsurgeryedu-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -138,7 +138,7 @@ monitors:
 
   - id: advancedsurgeryemea
     name: advancedsurgeryemea 
-    url: 'https://advancedsurgeryemea-site.baxterdigital.net'
+    url: "https://advancedsurgeryemea-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -146,7 +146,7 @@ monitors:
 
   - id: advancedsurgeryes
     name: advancedsurgery.baxter.es 
-    url: 'https://advancedsurgeryes-site.baxterdigital.net'
+    url: "https://advancedsurgeryes-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -154,7 +154,7 @@ monitors:
 
   - id: advancedsurgeryfi
     name: advancedsurgeryfi
-    url: 'https://advancedsurgeryfi-site.baxterdigital.net'
+    url: "https://advancedsurgeryfi-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -162,7 +162,7 @@ monitors:
 
   - id: advancedsurgeryfr
     name: advancedsurgeryfr
-    url: 'https://advancedsurgeryfr-site.baxterdigital.net'
+    url: "https://advancedsurgeryfr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -170,7 +170,7 @@ monitors:
 
   - id: advancedsurgeryfrbkp
     name: advancedsurgeryfrbkp 
-    url: 'https://advancedsurgeryfrbkp-site.baxterdigital.net'
+    url: "https://advancedsurgeryfrbkp-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -178,7 +178,7 @@ monitors:
 
   - id: advancedsurgerygr
     name: advancedsurgerygr 
-    url: 'https://advancedsurgerygr-site.baxterdigital.net'
+    url: "https://advancedsurgerygr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -186,7 +186,7 @@ monitors:
 
   - id: advancedsurgeryie
     name: advancedsurgery.baxterhealthcare.ie
-    url: 'https://advancedsurgeryie-site.baxterdigital.net'
+    url: "https://advancedsurgeryie-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -194,15 +194,15 @@ monitors:
 
   - id: advancedsurgeryit
     name: advancedsurgery.baxteritalia.it 
-    url: 'https://advancedsurgeryit-site.baxterdigital.net'
+    url: "https://advancedsurgeryit-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: advancedsurgerykr
-    name:  advancedsurgery.baxter.co.kr
-    url: 'https://advancedsurgerykr-site.baxterdigital.net'
+    name: advancedsurgery.baxter.co.kr
+    url: "https://advancedsurgerykr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -210,7 +210,7 @@ monitors:
 
   - id: advancedsurgerynl
     name: advancedsurgery.baxter.nl
-    url: 'https://advancedsurgerynl-site.baxterdigital.net'
+    url: "https://advancedsurgerynl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -218,7 +218,7 @@ monitors:
 
   - id: advancedsurgeryno
     name: advancedsurgeryno 
-    url: 'https://advancedsurgeryno-site.baxterdigital.net'
+    url: "https://advancedsurgeryno-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -226,7 +226,7 @@ monitors:
 
   - id: advancedsurgerypl
     name: advancedsurgery.baxter.com.pl
-    url: 'https://advancedsurgerypl-site.baxterdigital.net'
+    url: "https://advancedsurgerypl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -234,7 +234,7 @@ monitors:
 
   - id: advancedsurgerypt
     name: advancedsurgerypt 
-    url: 'https://advancedsurgerypt-site.baxterdigital.net'
+    url: "https://advancedsurgerypt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -242,7 +242,7 @@ monitors:
 
   - id: advancedsurgeryse
     name: advancedsurgeryse 
-    url: 'https://advancedsurgeryse-site.baxterdigital.net'
+    url: "https://advancedsurgeryse-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -250,7 +250,7 @@ monitors:
 
   - id: advancedsurgerytr
     name: advancedsurgery.baxter.com.tr
-    url: 'https://advancedsurgerytr-site.baxterdigital.net'
+    url: "https://advancedsurgerytr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -258,7 +258,7 @@ monitors:
 
   - id: advancedsurgeryuk
     name: advancedsurgery.baxterhealthcare.co.uk
-    url: 'https://advancedsurgeryuk-site.baxterdigital.net'
+    url: "https://advancedsurgeryuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -266,7 +266,7 @@ monitors:
 
   - id: anesthesia
     name: anesthesia 
-    url: 'https://anesthesia-site.baxterdigital.net'
+    url: "https://anesthesia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -274,7 +274,7 @@ monitors:
 
   - id: anesthesiaemea
     name: emeaanesthesia.baxter.com
-    url: 'https://anesthesiaemea-site.baxterdigital.net'
+    url: "https://anesthesiaemea-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -282,7 +282,7 @@ monitors:
 
   - id: anesthesiaemea20240701
     name: anesthesiaemea20240701 
-    url: 'https://anesthesiaemea20240701-site.baxterdigital.net'
+    url: "https://anesthesiaemea20240701-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -290,7 +290,7 @@ monitors:
 
   - id: apacmkj20210810
     name: apacmkj20210810 
-    url: 'https://apacmkj20210810-site.baxterdigital.net'
+    url: "https://apacmkj20210810-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -298,7 +298,7 @@ monitors:
 
   - id: baxterathome
     name: athome.baxter.com 
-    url: 'https://baxterathome-site.baxterdigital.net'
+    url: "https://baxterathome-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -306,7 +306,7 @@ monitors:
 
   - id: baxtercommeredith20210209
     name: baxtercommeredith20210209 
-    url: 'https://baxtercommeredith20210209-site.baxterdigital.net'
+    url: "https://baxtercommeredith20210209-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -314,7 +314,7 @@ monitors:
 
   - id: baxtereduk
     name: baxtereduk
-    url: 'https://baxtereduk-site.baxterdigital.net'
+    url: "https://baxtereduk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -322,7 +322,7 @@ monitors:
 
   - id: baxtereduk20200219
     name: baxtereduk20200219 
-    url: 'https://baxtereduk20200219-site.baxterdigital.net'
+    url: "https://baxtereduk20200219-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -330,7 +330,7 @@ monitors:
 
   - id: baxterproductivitysystem
     name: pse.baxter.com
-    url: 'https://baxterproductivitysystem-site.baxterdigital.net'
+    url: "https://baxterproductivitysystem-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -338,7 +338,7 @@ monitors:
 
   - id: baxterproductivitysystemde
     name: baxterproductivitysystemde 
-    url: 'https://baxterproductivitysystemde-site.baxterdigital.net'
+    url: "https://baxterproductivitysystemde-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -346,7 +346,7 @@ monitors:
 
   - id: baxterproductivitysystemfr
     name: baxterproductivitysystemfr
-    url: 'https://baxterproductivitysystemfr-site.baxterdigital.net'
+    url: "https://baxterproductivitysystemfr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -354,7 +354,7 @@ monitors:
 
   - id: bcci
     name: bcci.baxter.com 
-    url: 'https://bcci-site.baxterdigital.net'
+    url: "https://bcci-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -362,7 +362,7 @@ monitors:
 
   - id: bccibr
     name: bccibr 
-    url: 'https://bccibr-site.baxterdigital.net'
+    url: "https://bccibr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -370,7 +370,7 @@ monitors:
 
   - id: bccico
     name: bccico 
-    url: 'https://bccico-site.baxterdigital.net'
+    url: "https://bccico-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -378,7 +378,7 @@ monitors:
 
   - id: bcciemea
     name: emeabcci.baxter.com
-    url: 'https://bcciemea-site.baxterdigital.net'
+    url: "https://bcciemea-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -386,7 +386,7 @@ monitors:
 
   - id: bccimaster
     name: bccimaster
-    url: 'https://bccimaster-site.baxterdigital.net'
+    url: "https://bccimaster-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -394,7 +394,7 @@ monitors:
 
   - id: bccimx
     name: bccimx  
-    url: 'https://bccimx-site.baxterdigital.net'
+    url: "https://bccimx-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -402,7 +402,7 @@ monitors:
 
   - id: bccipt
     name: bccipt
-    url: 'https://bccipt-site.baxterdigital.net'
+    url: "https://bccipt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -410,7 +410,7 @@ monitors:
 
   - id: bcciuk
     name: bcci.baxterhealthcare.co.uk
-    url: 'https://bcciuk-site.baxterdigital.net'
+    url: "https://bcciuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -418,7 +418,7 @@ monitors:
 
   - id: becpoland
     name: bec.baxter.com.pl
-    url: 'https://becpoland-site.baxterdigital.net'
+    url: "https://becpoland-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -426,7 +426,7 @@ monitors:
 
   - id: becpoland20210505
     name: becpoland20210505 
-    url: 'https://becpoland20210505-site.baxterdigital.net'
+    url: "https://becpoland20210505-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -434,7 +434,7 @@ monitors:
 
   - id: becpoland20240926
     name: becpoland20240926 
-    url: 'https://becpoland20240926-site.baxterdigital.net'
+    url: "https://becpoland20240926-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -442,7 +442,7 @@ monitors:
 
   - id: bps20220324
     name: bps20220324 
-    url: 'https://bps20220324-site.baxterdigital.net'
+    url: "https://bps20220324-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -450,7 +450,7 @@ monitors:
 
   - id: canadapro
     name: www.acutetherapies.ca 
-    url: 'https://canadapro-site.baxterdigital.net'
+    url: "https://canadapro-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -458,7 +458,7 @@ monitors:
 
   - id: canadapro20200427
     name: canadapro20200427
-    url: 'https://canadapro20200427-site.baxterdigital.net'
+    url: "https://canadapro20200427-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -466,7 +466,7 @@ monitors:
 
   - id: clinicalnutrition
     name: clinicalnutrition
-    url: 'https://clinicalnutrition-site.baxterdigital.net'
+    url: "https://clinicalnutrition-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -474,7 +474,7 @@ monitors:
 
   - id: clinicalnutritionbr
     name: clinicalnutritionbr 
-    url: 'https://clinicalnutritionbr-site.baxterdigital.net'
+    url: "https://clinicalnutritionbr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -482,7 +482,7 @@ monitors:
 
   - id: clinicalnutritionco
     name: clinicalnutritionco 
-    url: 'https://clinicalnutritionco-site.baxterdigital.net'
+    url: "https://clinicalnutritionco-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -490,7 +490,7 @@ monitors:
 
   - id: clinicalnutritionco2
     name: clinicalnutritionco2 
-    url: 'https://clinicalnutritionco2-site.baxterdigital.net'
+    url: "https://clinicalnutritionco2-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -498,7 +498,7 @@ monitors:
 
   - id: clinicalnutritionhk
     name: clinicalnutritionhk  
-    url: 'https://clinicalnutritionhk-site.baxterdigital.net'
+    url: "https://clinicalnutritionhk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -506,7 +506,7 @@ monitors:
 
   - id: clinicalnutritionmx
     name: clinicalnutritionmx 
-    url: 'https://clinicalnutritionmx-site.baxterdigital.net'
+    url: "https://clinicalnutritionmx-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -514,15 +514,15 @@ monitors:
 
   - id: clinicalnutritionmx2
     name: clinicalnutritionmx2
-    url: 'https://clinicalnutritionmx2-site.baxterdigital.net'
+    url: "https://clinicalnutritionmx2-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: clinicalnutritionmy
-    name:  clinicalnutrition.baxter.com.my
-    url: 'https://clinicalnutritionmy-site.baxterdigital.net'
+    name: clinicalnutrition.baxter.com.my
+    url: "https://clinicalnutritionmy-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -530,7 +530,7 @@ monitors:
 
   - id: commercialdefault
     name: commercialdefault 
-    url: 'https://commercialdefault-site.baxterdigital.net'
+    url: "https://commercialdefault-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -538,7 +538,7 @@ monitors:
 
   - id: commercialus
     name: commercialus 
-    url: 'https://commercialus-site.baxterdigital.net'
+    url: "https://commercialus-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -546,31 +546,31 @@ monitors:
 
   - id: commercialweb
     name: commercialweb  
-    url: 'https://commercialweb-site.baxterdigital.net'
+    url: "https://commercialweb-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: commercialwhite
-    name:  
-    url: 'https://commercialwhite-site.baxterdigital.net'
+    name: commercialwhite
+    url: "https://commercialwhite-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: corpaustralia
-    name:  www.baxterhealthcare.com.au
-    url: 'https://corpaustralia-site.baxterdigital.net'
+    name: www.baxterhealthcare.com.au
+    url: "https://corpaustralia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: corpaustria
-    name:  www.baxter.at
-    url: 'https://corpaustria-site.baxterdigital.net'
+    name: www.baxter.at
+    url: "https://corpaustria-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -578,7 +578,7 @@ monitors:
 
   - id: corpbenelux
     name: www.baxter.be
-    url: 'https://corpbenelux-site.baxterdigital.net'
+    url: "https://corpbenelux-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -586,7 +586,7 @@ monitors:
 
   - id: corpbenelux20220311
     name: corpbenelux20220311
-    url: 'https://corpbenelux20220311-site.baxterdigital.net'
+    url: "https://corpbenelux20220311-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -594,7 +594,7 @@ monitors:
 
   - id: corpbrazil
     name: www.baxter.com.br
-    url: 'https://corpbrazil-site.baxterdigital.net'
+    url: "https://corpbrazil-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -602,7 +602,7 @@ monitors:
 
   - id: corpcanada
     name: www.baxter.ca
-    url: 'https://corpcanada-site.baxterdigital.net'
+    url: "https://corpcanada-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -610,7 +610,7 @@ monitors:
 
   - id: corpchile
     name: www.baxter.cl
-    url: 'https://corpchile-site.baxterdigital.net'
+    url: "https://corpchile-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -618,7 +618,7 @@ monitors:
 
   - id: corpchina
     name: www.baxter.com.cn
-    url: 'https://corpchina-site.baxterdigital.net'
+    url: "https://corpchina-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -626,7 +626,7 @@ monitors:
 
   - id: corpcolombia
     name: www.baxter.com.co
-    url: 'https://corpcolombia-site.baxterdigital.net'
+    url: "https://corpcolombia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -634,7 +634,7 @@ monitors:
 
   - id: corpcountrymaster
     name: corpcountrymaster 
-    url: 'https://corpcountrymaster-site.baxterdigital.net'
+    url: "https://corpcountrymaster-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -642,7 +642,7 @@ monitors:
 
   - id: corpcountrytest
     name: corpcountrytest 
-    url: 'https://corpcountrytest-site.baxterdigital.net'
+    url: "https://corpcountrytest-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -650,7 +650,7 @@ monitors:
 
   - id: corpczechrep
     name: www.baxter.cz
-    url: 'https://corpczechrep-site.baxterdigital.net'
+    url: "https://corpczechrep-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -658,7 +658,7 @@ monitors:
 
   - id: corpdenmark
     name: www.baxter.dk
-    url: 'https://corpdenmark-site.baxterdigital.net'
+    url: "https://corpdenmark-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -666,7 +666,7 @@ monitors:
 
   - id: corpfinland
     name: www.baxter.fi
-    url: 'https://corpfinland-site.baxterdigital.net'
+    url: "https://corpfinland-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -674,7 +674,7 @@ monitors:
 
   - id: corpfrance
     name: www.baxter.fr
-    url: 'https://corpfrance-site.baxterdigital.net'
+    url: "https://corpfrance-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -682,7 +682,7 @@ monitors:
 
   - id: corpgermany
     name: www.baxter.de
-    url: 'https://corpgermany-site.baxterdigital.net'
+    url: "https://corpgermany-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -690,7 +690,7 @@ monitors:
 
   - id: corpglobal20211203
     name: corpglobal20211203  
-    url: 'https://corpglobal20211203-site.baxterdigital.net'
+    url: "https://corpglobal20211203-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -698,7 +698,7 @@ monitors:
 
   - id: corpglobal20220518
     name: www.baxter.com
-    url: 'https://corpglobal20220518-site.baxterdigital.net'
+    url: "https://corpglobal20220518-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -706,7 +706,7 @@ monitors:
 
   - id: corpgreece
     name: www.baxter.com.gr
-    url: 'https://corpgreece-site.baxterdigital.net'
+    url: "https://corpgreece-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -714,7 +714,7 @@ monitors:
 
   - id: corphongkong
     name: www.baxter.com.hk
-    url: 'https://corphongkong-site.baxterdigital.net'
+    url: "https://corphongkong-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -722,7 +722,7 @@ monitors:
 
   - id: corpindia
     name: www.baxter.in
-    url: 'https://corpindia-site.baxterdigital.net'
+    url: "https://corpindia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -730,7 +730,7 @@ monitors:
 
   - id: corpireland
     name: baxterhealthcare.ie
-    url: 'https://corpireland-site.baxterdigital.net'
+    url: "https://corpireland-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -738,7 +738,7 @@ monitors:
 
   - id: corpitaly
     name: www.baxteritalia.it 
-    url: 'https://corpitaly-site.baxterdigital.net'
+    url: "https://corpitaly-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -746,7 +746,7 @@ monitors:
 
   - id: corpjapan
     name: www.baxter.co.jp
-    url: 'https://corpjapan-site.baxterdigital.net'
+    url: "https://corpjapan-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -754,7 +754,7 @@ monitors:
 
   - id: corpkorea
     name: www.baxter.co.kr 
-    url: 'https://corpkorea-site.baxterdigital.net'
+    url: "https://corpkorea-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -762,7 +762,7 @@ monitors:
 
   - id: corpmalaysia
     name: www.baxter.com.my
-    url: 'https://corpmalaysia-site.baxterdigital.net'
+    url: "https://corpmalaysia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -770,7 +770,7 @@ monitors:
 
   - id: corpmexico
     name: www.baxter.mx 
-    url: 'https://corpmexico-site.baxterdigital.net'
+    url: "https://corpmexico-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -778,7 +778,7 @@ monitors:
 
   - id: corpnewzealand
     name: www.baxter.co.nz
-    url: 'https://corpnewzealand-site.baxterdigital.net'
+    url: "https://corpnewzealand-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -786,7 +786,7 @@ monitors:
 
   - id: corpnorway
     name: www.baxter.no
-    url: 'https://corpnorway-site.baxterdigital.net'
+    url: "https://corpnorway-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -794,7 +794,7 @@ monitors:
 
   - id: corporatetestbase
     name: corporatetestbase 
-    url: 'https://corporatetestbase-site.baxterdigital.net'
+    url: "https://corporatetestbase-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -802,7 +802,7 @@ monitors:
 
   - id: corppoland
     name: www.baxter.com.pl 
-    url: 'https://corppoland-site.baxterdigital.net'
+    url: "https://corppoland-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -810,7 +810,7 @@ monitors:
 
   - id: corpportugal
     name: www.baxter.pt 
-    url: 'https://corpportugal-site.baxterdigital.net'
+    url: "https://corpportugal-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -818,7 +818,7 @@ monitors:
 
   - id: corppuertorico
     name: corppuertorico
-    url: 'https://corppuertorico-site.baxterdigital.net'
+    url: "https://corppuertorico-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -826,7 +826,7 @@ monitors:
 
   - id: corprussia
     name: ru.baxter.com
-    url: 'https://corprussia-site.baxterdigital.net'
+    url: "https://corprussia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -834,7 +834,7 @@ monitors:
 
   - id: corpsingapore
     name: www.baxter.com.sg
-    url: 'https://corpsingapore-site.baxterdigital.net'
+    url: "https://corpsingapore-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -842,7 +842,7 @@ monitors:
 
   - id: corpspain
     name: www.baxter.es
-    url: 'https://corpspain-site.baxterdigital.net'
+    url: "https://corpspain-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -850,7 +850,7 @@ monitors:
 
   - id: corpsweden
     name: www.baxter.se
-    url: 'https://corpsweden-site.baxterdigital.net'
+    url: "https://corpsweden-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -858,7 +858,7 @@ monitors:
 
   - id: corpswitzerland
     name: www.baxter.ch
-    url: 'https://corpswitzerland-site.baxterdigital.net'
+    url: "https://corpswitzerland-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -866,7 +866,7 @@ monitors:
 
   - id: corptaiwan
     name: www.baxter.com.tw
-    url: 'https://corptaiwan-site.baxterdigital.net'
+    url: "https://corptaiwan-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -874,23 +874,23 @@ monitors:
 
   - id: corpthailand
     name: corpthailand 
-    url: 'https://corpthailand-site.baxterdigital.net'
+    url: "https://corpthailand-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: corpturkey
-    name:  www.baxter.com.tr
-    url: 'https://corpturkey-site.baxterdigital.net'
+    name: www.baxter.com.tr
+    url: "https://corpturkey-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: corpuk
-    name:  baxterhealthcare.co.uk
-    url: 'https://corpuk-site.baxterdigital.net'
+    name: baxterhealthcare.co.uk
+    url: "https://corpuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -898,15 +898,15 @@ monitors:
 
   - id: edubaxtercatest
     name: edubaxtercatest 
-    url: 'https://edubaxtercatest-site.baxterdigital.net'
+    url: "https://edubaxtercatest-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: educationondemandca
-    name:  edu.baxter.ca
-    url: 'https://educationondemandca-site.baxterdigital.net'
+    name: edu.baxter.ca
+    url: "https://educationondemandca-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -914,15 +914,15 @@ monitors:
 
   - id: educationondemandca20240610
     name: educationondemandca20240610 
-    url: 'https://educationondemandca20240610-site.baxterdigital.net'
+    url: "https://educationondemandca20240610-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: emeamedicationmanagement
-    name:  emeamedicationdelivery.baxter.com
-    url: 'https://emeamedicationmanagement-site.baxterdigital.net'
+    name: emeamedicationdelivery.baxter.com
+    url: "https://emeamedicationmanagement-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -930,15 +930,15 @@ monitors:
 
   - id: emeamedicationmgmt20240125
     name: emeamedicationmgmt20240125 
-    url: 'https://emeamedicationmgmt20240125-site.baxterdigital.net'
+    url: "https://emeamedicationmgmt20240125-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: emeanutritionresources
-    name:  www.emeanutritionlibrary.baxter.com
-    url: 'https://emeanutritionresources-site.baxterdigital.net'
+    name: www.emeanutritionlibrary.baxter.com
+    url: "https://emeanutritionresources-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -946,7 +946,7 @@ monitors:
 
   - id: esrd
     name: esrd 
-    url: 'https://esrd-site.baxterdigital.net'
+    url: "https://esrd-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -954,15 +954,15 @@ monitors:
 
   - id: esrd20210129
     name: hemodialysis.baxter.com 
-    url: 'https://esrd20210129-site.baxterdigital.net'
+    url: "https://esrd20210129-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: evoiqbr
-    name:  www.evoiq.baxter.com.br
-    url: 'https://evoiqbr-site.baxterdigital.net'
+    name: www.evoiq.baxter.com.br
+    url: "https://evoiqbr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -970,7 +970,7 @@ monitors:
 
   - id: evoiqmaster
     name: evoiqmaster 
-    url: 'https://evoiqmaster-site.baxterdigital.net'
+    url: "https://evoiqmaster-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -978,15 +978,15 @@ monitors:
 
   - id: evoiqmx
     name: evoiqmx 
-    url: 'https://evoiqmx-site.baxterdigital.net'
+    url: "https://evoiqmx-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: germanycancernutrition
-    name:  ernaehren-bei-krebs.de
-    url: 'https://germanycancernutrition-site.baxterdigital.net'
+    name: ernaehren-bei-krebs.de
+    url: "https://germanycancernutrition-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -994,7 +994,7 @@ monitors:
 
   - id: globalacute
     name: globalacute  
-    url: 'https://globalacute-site.baxterdigital.net'
+    url: "https://globalacute-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1002,15 +1002,15 @@ monitors:
 
   - id: globalacute20210921
     name: globalacute20210921 
-    url: 'https://globalacute20210921-site.baxterdigital.net'
+    url: "https://globalacute20210921-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: globalacute20221128
-    name:  acutetherapies.baxter.com
-    url: 'https://globalacute20221128-site.baxterdigital.net'
+    name: acutetherapies.baxter.com
+    url: "https://globalacute20221128-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1018,7 +1018,7 @@ monitors:
 
   - id: globaladvancedsurgery20210325
     name: globaladvancedsurgery20210325 
-    url: 'https://globaladvancedsurgery20210325-site.baxterdigital.net'
+    url: "https://globaladvancedsurgery20210325-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1026,15 +1026,15 @@ monitors:
 
   - id: globaladvancedsurgery20210714
     name: globaladvancedsurgery20210714 
-    url: 'https://globaladvancedsurgery20210714-site.baxterdigital.net'
+    url: "https://globaladvancedsurgery20210714-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: globaladvancedsurgery20240610
-    name:  globaladvancedsurgery.baxter.com
-    url: 'https://globaladvancedsurgery20240610-site.baxterdigital.net'
+    name: globaladvancedsurgery.baxter.com
+    url: "https://globaladvancedsurgery20240610-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1042,7 +1042,7 @@ monitors:
 
   - id: globalnutrition
     name: globalnutrition 
-    url: 'https://globalnutrition-site.baxterdigital.net'
+    url: "https://globalnutrition-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1050,7 +1050,7 @@ monitors:
 
   - id: globalnutrition20211005
     name: globalnutrition20211005 
-    url: 'https://globalnutrition20211005-site.baxterdigital.net'
+    url: "https://globalnutrition20211005-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1058,15 +1058,15 @@ monitors:
 
   - id: homecareservicesuk
     name: homecareservicesuk 
-    url: 'https://homecareservicesuk-site.baxterdigital.net'
+    url: "https://homecareservicesuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: hospitalproducts
-    name:  www.ushospitalproducts.baxter.com
-    url: 'https://hospitalproducts-site.baxterdigital.net'
+    name: www.ushospitalproducts.baxter.com
+    url: "https://hospitalproducts-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1074,7 +1074,7 @@ monitors:
 
   - id: hospitalproducts20211009
     name: hospitalproducts20211009 
-    url: 'https://hospitalproducts20211009-site.baxterdigital.net'
+    url: "https://hospitalproducts20211009-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1082,7 +1082,7 @@ monitors:
 
   - id: hospitalproducts20240509
     name: hospitalproducts20240509 
-    url: 'https://hospitalproducts20240509-site.baxterdigital.net'
+    url: "https://hospitalproducts20240509-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1090,7 +1090,7 @@ monitors:
 
   - id: hospitalproducts20240926
     name: hospitalproducts20240926  
-    url: 'https://hospitalproducts20240926-site.baxterdigital.net'
+    url: "https://hospitalproducts20240926-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1098,7 +1098,7 @@ monitors:
 
   - id: hospitalproductsv2
     name: hospitalproductsv2
-    url: 'https://hospitalproductsv2-site.baxterdigital.net'
+    url: "https://hospitalproductsv2-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1106,7 +1106,7 @@ monitors:
 
   - id: hosprecyclinganz
     name: hosprecyclinganz 
-    url: 'https://hosprecyclinganz-site.baxterdigital.net'
+    url: "https://hosprecyclinganz-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1114,31 +1114,31 @@ monitors:
 
   - id: icnetsoftware
     name: icnetsoftware
-    url: 'https://icnetsoftware-site.baxterdigital.net'
+    url: "https://icnetsoftware-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: icnetsoftwarees
-    name:  icnetsoftware.baxter.es
-    url: 'https://icnetsoftwarees-site.baxterdigital.net'
+    name: icnetsoftware.baxter.es
+    url: "https://icnetsoftwarees-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: icnetsoftwarefr
-    name:  icnetsoftware.baxter.fr
-    url: 'https://icnetsoftwarefr-site.baxterdigital.net'
+    name: icnetsoftware.baxter.fr
+    url: "https://icnetsoftwarefr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: icnetsoftwareit
-    name:  icnetsoftware.baxteritalia.it
-    url: 'https://icnetsoftwareit-site.baxterdigital.net'
+    name: icnetsoftware.baxteritalia.it
+    url: "https://icnetsoftwareit-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1146,15 +1146,15 @@ monitors:
 
   - id: icnetsoftwarenl
     name: icnetsoftware.baxter.nl 
-    url: 'https://icnetsoftwarenl-site.baxterdigital.net'
+    url: "https://icnetsoftwarenl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: icnetsoftwareuk
-    name:  www.icnetsoftware.com
-    url: 'https://icnetsoftwareuk-site.baxterdigital.net'
+    name: www.icnetsoftware.com
+    url: "https://icnetsoftwareuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1162,7 +1162,7 @@ monitors:
 
   - id: infusionbaxtercatest
     name: infusionbaxtercatest
-    url: 'https://infusionbaxtercatest-site.baxterdigital.net'
+    url: "https://infusionbaxtercatest-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1170,15 +1170,15 @@ monitors:
 
   - id: infusiontech
     name: infusiontech
-    url: 'https://infusiontech-site.baxterdigital.net'
+    url: "https://infusiontech-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: infusiontechca
-    name:  infusiontechnology.baxter.ca
-    url: 'https://infusiontechca-site.baxterdigital.net'
+    name: infusiontechnology.baxter.ca
+    url: "https://infusiontechca-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1186,7 +1186,7 @@ monitors:
 
   - id: infusiontechglobal
     name: infusiontechglobal  
-    url: 'https://infusiontechglobal-site.baxterdigital.net'
+    url: "https://infusiontechglobal-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1194,7 +1194,7 @@ monitors:
 
   - id: infusiontechuk
     name: infusiontechuk 
-    url: 'https://infusiontechuk-site.baxterdigital.net'
+    url: "https://infusiontechuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1202,7 +1202,7 @@ monitors:
 
   - id: infusiontechweu
     name: infusiontechweu 
-    url: 'https://infusiontechweu-site.baxterdigital.net'
+    url: "https://infusiontechweu-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1210,15 +1210,15 @@ monitors:
 
   - id: ktsession2023
     name: ktsession2023  
-    url: 'https://ktsession2023-site.baxterdigital.net'
+    url: "https://ktsession2023-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: latammkj20210823
-    name:  co.mykidneyjourney.com
-    url: 'https://latammkj20210823-site.baxterdigital.net'
+    name: co.mykidneyjourney.com
+    url: "https://latammkj20210823-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1226,7 +1226,7 @@ monitors:
 
   - id: loginradius
     name: loginradius  
-    url: 'https://loginradius-site.baxterdigital.net'
+    url: "https://loginradius-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1234,7 +1234,7 @@ monitors:
 
   - id: medicationmgmt
     name: medicationmgmt
-    url: 'https://medicationmgmt-site.baxterdigital.net'
+    url: "https://medicationmgmt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1242,7 +1242,7 @@ monitors:
 
   - id: medicationmgmtes
     name: medicationmgmtes
-    url: 'https://medicationmgmtes-site.baxterdigital.net'
+    url: "https://medicationmgmtes-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1250,7 +1250,7 @@ monitors:
 
   - id: medicationmgmtfr
     name: medicationmgmtfr 
-    url: 'https://medicationmgmtfr-site.baxterdigital.net'
+    url: "https://medicationmgmtfr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1258,7 +1258,7 @@ monitors:
 
   - id: medicationmgmtnl
     name: medicationmgmtnl
-    url: 'https://medicationmgmtnl-site.baxterdigital.net'
+    url: "https://medicationmgmtnl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1266,7 +1266,7 @@ monitors:
 
   - id: medicationmgmtpt
     name: medicationmgmtpt 
-    url: 'https://medicationmgmtpt-site.baxterdigital.net'
+    url: "https://medicationmgmtpt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1274,7 +1274,7 @@ monitors:
 
   - id: mkj20210810
     name: mkj20210810
-    url: 'https://mkj20210810-site.baxterdigital.net'
+    url: "https://mkj20210810-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1282,7 +1282,7 @@ monitors:
 
   - id: mkjtest
     name: mkjtest 
-    url: 'https://mkjtest-site.baxterdigital.net'
+    url: "https://mkjtest-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1290,7 +1290,7 @@ monitors:
 
   - id: modernpd
     name: modernpd  
-    url: 'https://modernpd-site.baxterdigital.net'
+    url: "https://modernpd-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1298,7 +1298,7 @@ monitors:
 
   - id: modernpd20220215
     name: modernpd20220215
-    url: 'https://modernpd20220215-site.baxterdigital.net'
+    url: "https://modernpd20220215-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1306,7 +1306,7 @@ monitors:
 
   - id: modernpdapac
     name: modernpdapac 
-    url: 'https://modernpdapac-site.baxterdigital.net'
+    url: "https://modernpdapac-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1314,7 +1314,7 @@ monitors:
 
   - id: modernpdcn
     name: cn.modern-pd.com
-    url: 'https://modernpdcn-site.baxterdigital.net'
+    url: "https://modernpdcn-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1322,7 +1322,7 @@ monitors:
 
   - id: modernpdid
     name: id.modern-pd.com
-    url: 'https://modernpdid-site.baxterdigital.net'
+    url: "https://modernpdid-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1330,7 +1330,7 @@ monitors:
 
   - id: modernpdin
     name: in.modern-pd.com
-    url: 'https://modernpdin-site.baxterdigital.net'
+    url: "https://modernpdin-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1338,7 +1338,7 @@ monitors:
 
   - id: modernpdkr
     name: kr.modern-pd.com 
-    url: 'https://modernpdkr-site.baxterdigital.net'
+    url: "https://modernpdkr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1346,7 +1346,7 @@ monitors:
 
   - id: modernpdmy
     name: my.modern-pd.com 
-    url: 'https://modernpdmy-site.baxterdigital.net'
+    url: "https://modernpdmy-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1354,7 +1354,7 @@ monitors:
 
   - id: modernpdph
     name: ph.modern-pd.com
-    url: 'https://modernpdph-site.baxterdigital.net'
+    url: "https://modernpdph-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1362,7 +1362,7 @@ monitors:
 
   - id: modernpdsg
     name: sg.modern-pd.com
-    url: 'https://modernpdsg-site.baxterdigital.net'
+    url: "https://modernpdsg-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1370,7 +1370,7 @@ monitors:
 
   - id: modernpdtw
     name: modernpdtw  
-    url: 'https://modernpdtw-site.baxterdigital.net'
+    url: "https://modernpdtw-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1378,7 +1378,7 @@ monitors:
 
   - id: modernpdvn
     name: modernpdvn  
-    url: 'https://modernpdvn-site.baxterdigital.net'
+    url: "https://modernpdvn-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1386,7 +1386,7 @@ monitors:
 
   - id: multilangdemo
     name: multilangdemo
-    url: 'https://multilangdemo-site.baxterdigital.net'
+    url: "https://multilangdemo-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1394,7 +1394,7 @@ monitors:
 
   - id: myclariap
     name: myclariap 
-    url: 'https://myclariap-site.baxterdigital.net'
+    url: "https://myclariap-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1402,15 +1402,15 @@ monitors:
 
   - id: mykidneyjourney20210604
     name: mykidneyjourney20210604
-    url: 'https://mykidneyjourney20210604-site.baxterdigital.net'
+    url: "https://mykidneyjourney20210604-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: mykidneyjourney20210712
-    name:  www.mykidneyjourney.com
-    url: 'https://mykidneyjourney20210712-site.baxterdigital.net'
+    name: www.mykidneyjourney.com
+    url: "https://mykidneyjourney20210712-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1418,15 +1418,15 @@ monitors:
 
   - id: mykidneyjourney20210712a
     name: mykidneyjourney20210712a 
-    url: 'https://mykidneyjourney20210712a-site.baxterdigital.net'
+    url: "https://mykidneyjourney20210712a-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: nutritionat
-    name:  clinicalnutrition.baxter.at
-    url: 'https://nutritionat-site.baxterdigital.net'
+    name: clinicalnutrition.baxter.at
+    url: "https://nutritionat-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1434,7 +1434,7 @@ monitors:
 
   - id: nutritionbe
     name: nutritionbe 
-    url: 'https://nutritionbe-site.baxterdigital.net'
+    url: "https://nutritionbe-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1442,7 +1442,7 @@ monitors:
 
   - id: nutritionch
     name: clinicalnutrition.baxter.ch
-    url: 'https://nutritionch-site.baxterdigital.net'
+    url: "https://nutritionch-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1450,7 +1450,7 @@ monitors:
 
   - id: nutritionde
     name: clinicalnutrition.baxter.de
-    url: 'https://nutritionde-site.baxterdigital.net'
+    url: "https://nutritionde-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1458,15 +1458,15 @@ monitors:
 
   - id: nutritiondk
     name: nutritiondk
-    url: 'https://nutritiondk-site.baxterdigital.net'
+    url: "https://nutritiondk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: nutritionemea
-    name:  www.emeaclinicalnutrition.baxter.com
-    url: 'https://nutritionemea-site.baxterdigital.net'
+    name: www.emeaclinicalnutrition.baxter.com
+    url: "https://nutritionemea-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1474,7 +1474,7 @@ monitors:
 
   - id: nutritionemea20211028
     name: nutritionemea20211028 
-    url: 'https://nutritionemea20211028-site.baxterdigital.net'
+    url: "https://nutritionemea20211028-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1482,7 +1482,7 @@ monitors:
 
   - id: nutritionemeatest
     name: nutritionemeatest 
-    url: 'https://nutritionemeatest-site.baxterdigital.net'
+    url: "https://nutritionemeatest-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1490,7 +1490,7 @@ monitors:
 
   - id: nutritiones
     name: nutritiones
-    url: 'https://nutritiones-site.baxterdigital.net'
+    url: "https://nutritiones-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1498,7 +1498,7 @@ monitors:
 
   - id: nutritionfi
     name: nutritionfi 
-    url: 'https://nutritionfi-site.baxterdigital.net'
+    url: "https://nutritionfi-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1506,7 +1506,7 @@ monitors:
 
   - id: nutritionfr
     name: nutritionfr  
-    url: 'https://nutritionfr-site.baxterdigital.net'
+    url: "https://nutritionfr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1514,7 +1514,7 @@ monitors:
 
   - id: nutritiongr
     name: nutritiongr
-    url: 'https://nutritiongr-site.baxterdigital.net'
+    url: "https://nutritiongr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1522,23 +1522,23 @@ monitors:
 
   - id: nutritionie
     name: nutritionie 
-    url: 'https://nutritionie-site.baxterdigital.net'
+    url: "https://nutritionie-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: nutritionit
-    name:  clinicalnutrition.baxteritalia.it
-    url: 'https://nutritionit-site.baxterdigital.net'
+    name: clinicalnutrition.baxteritalia.it
+    url: "https://nutritionit-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: nutritionnl
-    name:  clinicalnutrition.baxter.nl
-    url: 'https://nutritionnl-site.baxterdigital.net'
+    name: clinicalnutrition.baxter.nl
+    url: "https://nutritionnl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1546,7 +1546,7 @@ monitors:
 
   - id: nutritionno
     name: nutritionno  
-    url: 'https://nutritionno-site.baxterdigital.net'
+    url: "https://nutritionno-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1554,7 +1554,7 @@ monitors:
 
   - id: nutritionpt
     name: nutritionpt 
-    url: 'https://nutritionpt-site.baxterdigital.net'
+    url: "https://nutritionpt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1562,15 +1562,15 @@ monitors:
 
   - id: nutritionru
     name: nutritionru 
-    url: 'https://nutritionru-site.baxterdigital.net'
+    url: "https://nutritionru-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: nutritionuk
-    name:  clinicalnutrition.baxterhealthcare.co.uk
-    url: 'https://nutritionuk-site.baxterdigital.net'
+    name: clinicalnutrition.baxterhealthcare.co.uk
+    url: "https://nutritionuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1578,15 +1578,15 @@ monitors:
 
   - id: nutritionza
     name: nutritionza 
-    url: 'https://nutritionza-site.baxterdigital.net'
+    url: "https://nutritionza-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: nutrtionse
-    name:  clinicalnutrition.baxter.se
-    url: 'https://nutrtionse-site.baxterdigital.net'
+    name: clinicalnutrition.baxter.se
+    url: "https://nutrtionse-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1594,23 +1594,23 @@ monitors:
 
   - id: opatfi
     name: opatfi 
-    url: 'https://opatfi-site.baxterdigital.net'
+    url: "https://opatfi-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: opatuk
-    name:  opat.baxterhealthcare.co.uk
-    url: 'https://opatuk-site.baxterdigital.net'
+    name: opat.baxterhealthcare.co.uk
+    url: "https://opatuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: pdempowers20230314
-    name:  www.pdempowers.com
-    url: 'https://pdempowers20230314-site.baxterdigital.net'
+    name: www.pdempowers.com
+    url: "https://pdempowers20230314-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1618,15 +1618,15 @@ monitors:
 
   - id: pdempowers20240624
     name: pdempowers20240624 
-    url: 'https://pdempowers20240624-site.baxterdigital.net'
+    url: "https://pdempowers20240624-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: pdpprofessionalbackup19092019
-    name:  www.pdprofessional.asia
-    url: 'https://pdpprofessionalbackup19092019-site.baxterdigital.net'
+    name: www.pdprofessional.asia
+    url: "https://pdpprofessionalbackup19092019-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1634,15 +1634,15 @@ monitors:
 
   - id: pdproasia20211103
     name: pdproasia20211103 
-    url: 'https://pdproasia20211103-site.baxterdigital.net'
+    url: "https://pdproasia20211103-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: pdtherapyde
-    name:  www.dialyse-zuhause.de
-    url: 'https://pdtherapyde-site.baxterdigital.net'
+    name: www.dialyse-zuhause.de
+    url: "https://pdtherapyde-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1650,7 +1650,7 @@ monitors:
 
   - id: pharmacyuk
     name: pharmacyuk 
-    url: 'https://pharmacyuk-site.baxterdigital.net'
+    url: "https://pharmacyuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1658,39 +1658,39 @@ monitors:
 
   - id: pharmaus
     name: pharmaus 
-    url: 'https://pharmaus-site.baxterdigital.net'
+    url: "https://pharmaus-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: pnedu
-    name:  meded.baxter.com
-    url: 'https://pnedu-site.baxterdigital.net'
+    name: meded.baxter.com
+    url: "https://pnedu-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: professionalasia
-    name:  www.baxterprofessional.asia
-    url: 'https://professionalasia-site.baxterdigital.net'
+    name: www.baxterprofessional.asia
+    url: "https://professionalasia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: professionalau
-    name:  www.baxterprofessional.com.au
-    url: 'https://professionalau-site.baxterdigital.net'
+    name: www.baxterprofessional.com.au
+    url: "https://professionalau-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: professionalde
-    name:  baxterprofessional.de
-    url: 'https://professionalde-site.baxterdigital.net'
+    name: baxterprofessional.de
+    url: "https://professionalde-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1698,7 +1698,7 @@ monitors:
 
   - id: professionaljp
     name: professionaljp 
-    url: 'https://professionaljp-site.baxterdigital.net'
+    url: "https://professionaljp-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1706,23 +1706,23 @@ monitors:
 
   - id: professionaljp2
     name: professionaljp2  
-    url: 'https://professionaljp2-site.baxterdigital.net'
+    url: "https://professionaljp2-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: professionalnz
-    name:  www.baxterprofessional.co.nz
-    url: 'https://professionalnz-site.baxterdigital.net'
+    name: www.baxterprofessional.co.nz
+    url: "https://professionalnz-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: provantivejp
-    name:  www.baxterpro.jp
-    url: 'https://provantivejp-site.baxterdigital.net'
+    name: www.baxterpro.jp
+    url: "https://provantivejp-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1730,23 +1730,23 @@ monitors:
 
   - id: rcs
     name: rcs 
-    url: 'https://rcs-site.baxterdigital.net'
+    url: "https://rcs-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: rcs20200710
-    name:  rcs.baxter.com
-    url: 'https://rcs20200710-site.baxterdigital.net'
+    name: rcs.baxter.com
+    url: "https://rcs20200710-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcare
-    name:  renalcare.baxter.com
-    url: 'https://renalcare-site.baxterdigital.net'
+    name: renalcare.baxter.com
+    url: "https://renalcare-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1754,31 +1754,31 @@ monitors:
 
   - id: renalcare20200330
     name: renalcare20200330 
-    url: 'https://renalcare20200330-site.baxterdigital.net'
+    url: "https://renalcare20200330-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcarede
-    name:  "renalcare.baxter.de
-    url: 'https://renalcarede-site.baxterdigital.net'
+    name: renalcare.baxter.de
+    url: "https://renalcarede-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcarejp
-    name:  jp.mypdnavi.com
-    url: 'https://renalcarejp-site.baxterdigital.net'
+    name: jp.mypdnavi.com
+    url: "https://renalcarejp-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcarekr
-    name:  renalcare.baxter.co.kr
-    url: 'https://renalcarekr-site.baxterdigital.net'
+    name: renalcare.baxter.co.kr
+    url: "https://renalcarekr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1786,7 +1786,7 @@ monitors:
 
   - id: renalcarekr20211130
     name: renalcarekr20211130 
-    url: 'https://renalcarekr20211130-site.baxterdigital.net'
+    url: "https://renalcarekr20211130-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1794,23 +1794,23 @@ monitors:
 
   - id: renalcaresea
     name: renalcaresea 
-    url: 'https://renalcaresea-site.baxterdigital.net'
+    url: "https://renalcaresea-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcaresea20211109
-    name:  www.pdacademy.asia
-    url: 'https://renalcaresea20211109-site.baxterdigital.net'
+    name: www.pdacademy.asia
+    url: "https://renalcaresea20211109-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcareuk
-    name:  renalcare.baxterhealthcare.co.uk
-    url: 'https://renalcareuk-site.baxterdigital.net'
+    name: renalcare.baxterhealthcare.co.uk
+    url: "https://renalcareuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1818,23 +1818,23 @@ monitors:
 
   - id: renalcareus
     name: renalcareus 
-    url: 'https://renalcareus-site.baxterdigital.net'
+    url: "https://renalcareus-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcareus20211118
-    name:  renalcareus.baxter.com
-    url: 'https://renalcareus20211118-site.baxterdigital.net'
+    name: renalcareus.baxter.com
+    url: "https://renalcareus20211118-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalcareweu
-    name:  emearenalcare.baxter.com
-    url: 'https://renalcareweu-site.baxterdigital.net'
+    name: emearenalcare.baxter.com
+    url: "https://renalcareweu-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1842,7 +1842,7 @@ monitors:
 
   - id: renalcareweumaster
     name: renalcareweumaster 
-    url: 'https://renalcareweumaster-site.baxterdigital.net'
+    url: "https://renalcareweumaster-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1850,23 +1850,23 @@ monitors:
 
   - id: renaldtp
     name: renaldtp 
-    url: 'https://renaldtp-site.baxterdigital.net'
+    url: "https://renaldtp-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpasia
-    name:  www.apac.mykidneyjourney.com
-    url: 'https://renaldtpasia-site.baxterdigital.net'
+    name: www.apac.mykidneyjourney.com
+    url: "https://renaldtpasia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpat
-    name:  mykidneyjourney.baxter.at
-    url: 'https://renaldtpat-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.at
+    url: "https://renaldtpat-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1874,23 +1874,23 @@ monitors:
 
   - id: renaldtpau
     name: renaldtpau  
-    url: 'https://renaldtpau-site.baxterdigital.net'
+    url: "https://renaldtpau-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpau2
-    name:  au.mykidneyjourney.com
-    url: 'https://renaldtpau2-site.baxterdigital.net'
+    name: au.mykidneyjourney.com
+    url: "https://renaldtpau2-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpbe
-    name:  mykidneyjourney.baxter.be
-    url: 'https://renaldtpbe-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.be
+    url: "https://renaldtpbe-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1898,31 +1898,31 @@ monitors:
 
   - id: renaldtpbn
     name: renaldtpbn 
-    url: 'https://renaldtpbn-site.baxterdigital.net'
+    url: "https://renaldtpbn-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpbr
-    name:  br.mykidneyjourney.com
-    url: 'https://renaldtpbr-site.baxterdigital.net'
+    name: br.mykidneyjourney.com
+    url: "https://renaldtpbr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpca
-    name:  ca.mykidneyjourney.com
-    url: 'https://renaldtpca-site.baxterdigital.net'
+    name: ca.mykidneyjourney.com
+    url: "https://renaldtpca-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpch
-    name:  mykidneyjourney.baxter.ch
-    url: 'https://renaldtpch-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.ch
+    url: "https://renaldtpch-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1930,31 +1930,31 @@ monitors:
 
   - id: renaldtpch20211213
     name: renaldtpch20211213 
-    url: 'https://renaldtpch20211213-site.baxterdigital.net'
+    url: "https://renaldtpch20211213-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpcn
-    name:  cn.mykidneyjourney.com
-    url: 'https://renaldtpcn-site.baxterdigital.net'
+    name: cn.mykidneyjourney.com
+    url: "https://renaldtpcn-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpcz
-    name:  domaci-dialyza.cz
-    url: 'https://renaldtpcz-site.baxterdigital.net'
+    name: domaci-dialyza.cz
+    url: "https://renaldtpcz-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpde
-    name:  mykidneyjourney.baxter.de
-    url: 'https://renaldtpde-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.de
+    url: "https://renaldtpde-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -1962,39 +1962,39 @@ monitors:
 
   - id: renaldtpdk
     name: mykidneyjourney.baxter.dk 
-    url: 'https://renaldtpdk-site.baxterdigital.net'
+    url: "https://renaldtpdk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpes
-    name:  mykidneyjourney.baxter.es
-    url: 'https://renaldtpes-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.es
+    url: "https://renaldtpes-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpfi
-    name:  mykidneyjourney.baxter.fi
-    url: 'https://renaldtpfi-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.fi
+    url: "https://renaldtpfi-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpfr
-    name:  mykidneyjourney.baxter.fr
-    url: 'https://renaldtpfr-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.fr
+    url: "https://renaldtpfr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpgr
-    name:  mykidneyjourney.baxter.com.gr
-    url: 'https://renaldtpgr-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.com.gr
+    url: "https://renaldtpgr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2002,23 +2002,23 @@ monitors:
 
   - id: renaldtphk
     name: renaldtphk 
-    url: 'https://renaldtphk-site.baxterdigital.net'
+    url: "https://renaldtphk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtphr
-    name:  hr.mykidneyjourney.com
-    url: 'https://renaldtphr-site.baxterdigital.net'
+    name: hr.mykidneyjourney.com
+    url: "https://renaldtphr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtphu
-    name:  hu.mykidneyjourney.com
-    url: 'https://renaldtphu-site.baxterdigital.net'
+    name: hu.mykidneyjourney.com
+    url: "https://renaldtphu-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2026,7 +2026,7 @@ monitors:
 
   - id: renaldtpid
     name: renaldtpid
-    url: 'https://renaldtpid-site.baxterdigital.net'
+    url: "https://renaldtpid-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2034,7 +2034,7 @@ monitors:
 
   - id: renaldtpie
     name: mykidneyjourney.baxterhealthcare.ie
-    url: 'https://renaldtpie-site.baxterdigital.net'
+    url: "https://renaldtpie-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2042,31 +2042,31 @@ monitors:
 
   - id: renaldtpil
     name: il.mykidneyjourney.com
-    url: 'https://renaldtpil-site.baxterdigital.net'
+    url: "https://renaldtpil-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpin
-    name:  www.yourdialysisjourney.in
-    url: 'https://renaldtpin-site.baxterdigital.net'
+    name: www.yourdialysisjourney.in
+    url: "https://renaldtpin-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpit
-    name:  mykidneyjourney.baxteritalia.it
-    url: 'https://renaldtpit-site.baxterdigital.net'
+    name: mykidneyjourney.baxteritalia.it
+    url: "https://renaldtpit-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpjp20220407
-    name:  jp.mykidneyjourney.com
-    url: 'https://renaldtpjp20220407-site.baxterdigital.net'
+    name: jp.mykidneyjourney.com
+    url: "https://renaldtpjp20220407-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2074,7 +2074,7 @@ monitors:
 
   - id: renaldtpjp20240611
     name: renaldtpjp20240611 
-    url: 'https://renaldtpjp20240611-site.baxterdigital.net'
+    url: "https://renaldtpjp20240611-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2082,15 +2082,15 @@ monitors:
 
   - id: renaldtpkr
     name: renaldtpkr  
-    url: 'https://renaldtpkr-site.baxterdigital.net'
+    url: "https://renaldtpkr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtplt
-    name:  lt.mykidneyjourney.com
-    url: 'https://renaldtplt-site.baxterdigital.net'
+    name: lt.mykidneyjourney.com
+    url: "https://renaldtplt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2098,7 +2098,7 @@ monitors:
 
   - id: renaldtpmx
     name: renaldtpmx
-    url: 'https://renaldtpmx-site.baxterdigital.net'
+    url: "https://renaldtpmx-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2106,15 +2106,15 @@ monitors:
 
   - id: renaldtpmy
     name: renaldtpmy
-    url: 'https://renaldtpmy-site.baxterdigital.net'
+    url: "https://renaldtpmy-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpmy2
-    name:  my.mykidneyjourney.com
-    url: 'https://renaldtpmy2-site.baxterdigital.net'
+    name: my.mykidneyjourney.com
+    url: "https://renaldtpmy2-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2122,23 +2122,23 @@ monitors:
 
   - id: renaldtpnl
     name: mykidneyjourney.baxter.nl 
-    url: 'https://renaldtpnl-site.baxterdigital.net'
+    url: "https://renaldtpnl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpno
-    name:  mykidneyjourney.baxter.no
-    url: 'https://renaldtpno-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.no
+    url: "https://renaldtpno-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpnz20240712
-    name:  nz.mykidneyjourney.com
-    url: 'https://renaldtpnz20240712-site.baxterdigital.net'
+    name: nz.mykidneyjourney.com
+    url: "https://renaldtpnz20240712-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2146,7 +2146,7 @@ monitors:
 
   - id: renaldtpph
     name: renaldtpph 
-    url: 'https://renaldtpph-site.baxterdigital.net'
+    url: "https://renaldtpph-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2154,39 +2154,39 @@ monitors:
 
   - id: renaldtppl
     name: renaldtppl 
-    url: 'https://renaldtppl-site.baxterdigital.net'
+    url: "https://renaldtppl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtppt
-    name:  mykidneyjourney.baxter.pt
-    url: 'https://renaldtppt-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.pt
+    url: "https://renaldtppt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtprs
-    name:  rs.mykidneyjourney.com
-    url: 'https://renaldtprs-site.baxterdigital.net'
+    name: rs.mykidneyjourney.com
+    url: "https://renaldtprs-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpsa
-    name:  sa.mykidneyjourney.com
-    url: 'https://renaldtpsa-site.baxterdigital.net'
+    name: sa.mykidneyjourney.com
+    url: "https://renaldtpsa-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpse
-    name:  mykidneyjourney.baxter.se
-    url: 'https://renaldtpse-site.baxterdigital.net'
+    name: mykidneyjourney.baxter.se
+    url: "https://renaldtpse-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2194,31 +2194,31 @@ monitors:
 
   - id: renaldtpsg
     name: renaldtpsg 
-    url: 'https://renaldtpsg-site.baxterdigital.net'
+    url: "https://renaldtpsg-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpsl
-    name:  si.mykidneyjourney.com
-    url: 'https://renaldtpsl-site.baxterdigital.net'
+    name: si.mykidneyjourney.com
+    url: "https://renaldtpsl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpth
-    name:  th.mykidneyjourney.com
-    url: 'https://renaldtpth-site.baxterdigital.net'
+    name: th.mykidneyjourney.com
+    url: "https://renaldtpth-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtptr
-    name:  adimadimdiyaliz.com
-    url: 'https://renaldtptr-site.baxterdigital.net'
+    name: adimadimdiyaliz.com
+    url: "https://renaldtptr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2226,7 +2226,7 @@ monitors:
 
   - id: renaldtptr16112021
     name: renaldtptr16112021
-    url: 'https://renaldtptr16112021-site.baxterdigital.net'
+    url: "https://renaldtptr16112021-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2234,15 +2234,15 @@ monitors:
 
   - id: renaldtptw
     name: renaldtptw 
-    url: 'https://renaldtptw-site.baxterdigital.net'
+    url: "https://renaldtptw-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renaldtpuk
-    name:  mykidneyjourney.baxterhealthcare.co.uk
-    url: 'https://renaldtpuk-site.baxterdigital.net'
+    name: mykidneyjourney.baxterhealthcare.co.uk
+    url: "https://renaldtpuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2250,23 +2250,23 @@ monitors:
 
   - id: renaldtpvn
     name: renaldtpvn 
-    url: 'https://renaldtpvn-site.baxterdigital.net'
+    url: "https://renaldtpvn-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: renalpoland06182020
-    name:  www.zyciezdializa.pl
-    url: 'https://renalpoland06182020-site.baxterdigital.net'
+    name: www.zyciezdializa.pl
+    url: "https://renalpoland06182020-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: saudiarabia
-    name:  www.mea.baxter.com
-    url: 'https://saudiarabia-site.baxterdigital.net'
+    name: www.mea.baxter.com
+    url: "https://saudiarabia-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2274,7 +2274,7 @@ monitors:
 
   - id: specialtydefault
     name: specialtydefault 
-    url: 'https://specialtydefault-site.baxterdigital.net'
+    url: "https://specialtydefault-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2282,7 +2282,7 @@ monitors:
 
   - id: specialtytestbase
     name: specialtytestbase 
-    url: 'https://specialtytestbase-site.baxterdigital.net'
+    url: "https://specialtytestbase-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2290,7 +2290,7 @@ monitors:
 
   - id: starling
     name: starling 
-    url: 'https://starling-site.baxterdigital.net'
+    url: "https://starling-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2298,7 +2298,7 @@ monitors:
 
   - id: start
     name: start 
-    url: 'https://start-site.baxterdigital.net'
+    url: "https://start-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2306,7 +2306,7 @@ monitors:
 
   - id: start2020
     name: start2020  
-    url: 'https://start2020-site.baxterdigital.net'
+    url: "https://start2020-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2314,7 +2314,7 @@ monitors:
 
   - id: synovismicro
     name: synovismicro 
-    url: 'https://synovismicro-site.baxterdigital.net'
+    url: "https://synovismicro-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2322,7 +2322,7 @@ monitors:
 
   - id: templatetraining
     name: templatetraining
-    url: 'https://templatetraining-site.baxterdigital.net'
+    url: "https://templatetraining-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2330,79 +2330,79 @@ monitors:
 
   - id: therapydefault
     name: therapydefault 
-    url: 'https://therapydefault-site.baxterdigital.net'
+    url: "https://therapydefault-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubat
-    name:  travelclub.baxter.at
-    url: 'https://travelclubat-site.baxterdigital.net'
+    name: travelclub.baxter.at
+    url: "https://travelclubat-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubbe
-    name:  travelclub.baxter.be
-    url: 'https://travelclubbe-site.baxterdigital.net'
+    name: travelclub.baxter.be
+    url: "https://travelclubbe-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubch
-    name:  travelclub.baxter.ch
-    url: 'https://travelclubch-site.baxterdigital.net'
+    name: travelclub.baxter.ch
+    url: "https://travelclubch-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubde
-    name:  travelclub.baxter.de
-    url: 'https://travelclubde-site.baxterdigital.net'
+    name: travelclub.baxter.de
+    url: "https://travelclubde-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubdk
-    name:  travelclub.baxter.dk
-    url: 'https://travelclubdk-site.baxterdigital.net'
+    name: travelclub.baxter.dk
+    url: "https://travelclubdk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubes
-    name:  travelclub.baxter.es
-    url: 'https://travelclubes-site.baxterdigital.net'
+    name: travelclub.baxter.es
+    url: "https://travelclubes-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubfi
-    name:  travelclub.baxter.fi
-    url: 'https://travelclubfi-site.baxterdigital.net'
+    name: travelclub.baxter.fi
+    url: "https://travelclubfi-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubfr
-    name:  travelclub.baxter.fr
-    url: 'https://travelclubfr-site.baxterdigital.net'
+    name: travelclub.baxter.fr
+    url: "https://travelclubfr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubgr
-    name:  travelclub.baxter.com.gr
-    url: 'https://travelclubgr-site.baxterdigital.net'
+    name: travelclub.baxter.com.gr
+    url: "https://travelclubgr-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2410,15 +2410,15 @@ monitors:
 
   - id: travelclubie
     name: travelclubie  
-    url: 'https://travelclubie-site.baxterdigital.net'
+    url: "https://travelclubie-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubit
-    name:  travelclub.baxteritalia.it
-    url: 'https://travelclubit-site.baxterdigital.net'
+    name: travelclub.baxteritalia.it
+    url: "https://travelclubit-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2426,7 +2426,7 @@ monitors:
 
   - id: travelclubmaster
     name: travelclubmaster 
-    url: 'https://travelclubmaster-site.baxterdigital.net'
+    url: "https://travelclubmaster-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2434,23 +2434,23 @@ monitors:
 
   - id: travelclubmasteremea
     name: travelclubmasteremea  
-    url: 'https://travelclubmasteremea-site.baxterdigital.net'
+    url: "https://travelclubmasteremea-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubnl
-    name:  travelclub.baxter.nl
-    url: 'https://travelclubnl-site.baxterdigital.net'
+    name: travelclub.baxter.nl
+    url: "https://travelclubnl-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: false
 
   - id: travelclubno
-    name:  travelclub.baxter.no
-    url: 'https://travelclubno-site.baxterdigital.net'
+    name: travelclub.baxter.no
+    url: "https://travelclubno-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2458,7 +2458,7 @@ monitors:
 
   - id: travelclubpt
     name: travelclub.baxter.pt
-    url: 'https://travelclubpt-site.baxterdigital.net'
+    url: "https://travelclubpt-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2466,7 +2466,7 @@ monitors:
 
   - id: travelclubse
     name: travelclub.baxter.se
-    url: 'https://travelclubse-site.baxterdigital.net'
+    url: "https://travelclubse-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2474,7 +2474,7 @@ monitors:
 
   - id: travelclubuk
     name: travelclub.baxterhealthcare.co.uk
-    url: 'https://travelclubuk-site.baxterdigital.net'
+    url: "https://travelclubuk-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2482,7 +2482,7 @@ monitors:
 
   - id: usbcci
     name: usbcci.baxter.com 
-    url: 'https://usbcci-site.baxterdigital.net'
+    url: "https://usbcci-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2490,7 +2490,7 @@ monitors:
 
   - id: usstarling20211213
     name: usstarling20211213 
-    url: 'https://usstarling20211213-site.baxterdigital.net'
+    url: "https://usstarling20211213-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2498,7 +2498,7 @@ monitors:
 
   - id: usstarling20220120
     name: usstarling.baxter.com
-    url: 'https://usstarling20220120-site.baxterdigital.net'
+    url: "https://usstarling20220120-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
@@ -2506,7 +2506,7 @@ monitors:
 
   - id: wwwbaxtercatest
     name: wwwbaxtercatest 
-    url: 'https://wwwbaxtercatest-site.baxterdigital.net'
+    url: "https://wwwbaxtercatest-site.baxterdigital.net"
     method: GET
     expectStatus: 200
     linkable: true
