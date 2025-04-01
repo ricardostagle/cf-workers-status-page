@@ -16,8 +16,8 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: 12
-    - run: yarn config set registry https://registry.npmjs.org && yarn install
+        node-version: 20
+    - run: yarn config set registry https://registry.npmjs.org
     - run: yarn install
     - run: yarn build
       env:
