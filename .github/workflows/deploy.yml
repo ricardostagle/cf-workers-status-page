@@ -4,31 +4,27 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v4
-    - name: enable corepack
-      run: corepack enable
-
-    - name: set node
-      uses: actions/setup-node@v4
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
       with:
-        node-version: 18
-        cache: 'yarn'
-
+        node-version: 12
     - run: yarn install
     - run: yarn build
       env:
         NODE_ENV: production
     - name: Publish
-      uses: cloudflare/wrangler-action@v3
+      uses: cloudflare/wrangler-action@1.3.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
-        wranglerVersion: "4.6.0"
         preCommands: |
           wrangler kv:namespace create KV_STATUS_PAGE || true
           export KV_NAMESPACE_ID=$(npx @cloudflare/wrangler@1 kv:namespace list 2> >(tee stderr.log >&2) | head -1 | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
