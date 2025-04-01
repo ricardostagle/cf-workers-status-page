@@ -13,10 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v4
+    - name: enable corepack
+      run: corepack enable
+    - name: set node
+      uses: actions/setup-node@v4
       with:
-        node-version: 12
+        node-version: 'lts/*'
+        cache: 'yarn'
     - run: yarn install
     - run: yarn build
       env:
