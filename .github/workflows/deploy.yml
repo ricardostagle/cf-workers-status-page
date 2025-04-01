@@ -17,7 +17,7 @@ jobs:
     - name: set node
       uses: actions/setup-node@v4
       with:
-        node-version: 12
+        node-version: 'lts/*'
         cache: 'yarn'
     - run: yarn install
     - run: yarn build
