@@ -14,7 +14,6 @@ settings:
   dayInHistogramNotOperational: "incident(s)"
 
 monitors:
-  
   - id: acutecare20210401
     name: acutecare20210401
     url: "https://acutecare20210401-site.baxterdigital.net"
@@ -2503,3 +2502,4 @@ monitors:
     expectStatus: 200
     linkable: true
     followRedirect: false
+
